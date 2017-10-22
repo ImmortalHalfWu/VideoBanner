@@ -1,0 +1,167 @@
+[
+    {
+        "outputFile": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 892
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 1120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 897,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 1704
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1126,
+                        "endLine": 34,
+                        "endColumn": 12,
+                        "endOffset": 1933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1709,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 2528
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1939,
+                        "endLine": 47,
+                        "endColumn": 12,
+                        "endOffset": 2758
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2533,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 3382
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2764,
+                        "endLine": 64,
+                        "endColumn": 12,
+                        "endOffset": 3613
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 3387,
+                    "endColumn": 112,
+                    "endOffset": 3495
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 3845,
+                        "endColumn": 119,
+                        "endOffset": 3960
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 3500,
+                    "endColumn": 94,
+                    "endOffset": 3590
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 3966,
+                        "endColumn": 101,
+                        "endOffset": 4063
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 3595,
+                    "endColumn": 116,
+                    "endOffset": 3707
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 4069,
+                        "endColumn": 123,
+                        "endOffset": 4188
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 3712,
+                    "endColumn": 124,
+                    "endOffset": 3832
+                },
+                "from": {
+                    "file": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 4194,
+                        "endColumn": 131,
+                        "endOffset": 4321
+                    }
+                }
+            }
+        ]
+    }
+]
