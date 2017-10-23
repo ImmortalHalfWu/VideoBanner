@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.immortal.half.wu.videobannerview.R;
 import com.immortal.half.wu.videobannerview.beans.interfaces.VideoModelInterface;
-import com.immortal.half.wu.videobannerview.fragments.interfaces.VideoFragmentCallBack;
+import com.immortal.half.wu.videobannerview.fragments.interfaces.FragmentCallBack;
 import com.immortal.half.wu.videobannerview.utils.Loging;
 
 import java.io.File;
@@ -29,7 +29,7 @@ public class VideoFragment2 extends Fragment implements MediaPlayer.OnPreparedLi
 
     private VideoModelInterface mParam1;
 
-    private VideoFragmentCallBack callBack = new VideoFragmentCallBack() {
+    private FragmentCallBack callBack = new FragmentCallBack() {
         @Override
         public void over(@NonNull Fragment fragment) {
 
@@ -67,7 +67,7 @@ public class VideoFragment2 extends Fragment implements MediaPlayer.OnPreparedLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_video_fragment2, container, false);
+        return inflater.inflate(R.layout.fragment_video_fragment, container, false);
     }
 
     @Override
@@ -83,24 +83,18 @@ public class VideoFragment2 extends Fragment implements MediaPlayer.OnPreparedLi
 
     @Override
     public void onResume() {
-        Loging.log(mIndex + " ____onResume: " +  "___videoView == null ? " + (videoView == null));
         if (isVisibleToUser && videoView != null){
             videoView.setVideoURI(getVideoUri(mParam1.getVideoUrl()));
             videoView.seekTo(mParam1.getCurrentPosition());
             videoView.start();
         }
-//            videoView.start();
         super.onResume();
     }
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         this.isVisibleToUser = isVisibleToUser;
-        Loging.log(mIndex + " __ visible = " + isVisibleToUser + "___videoView == null ? " + (videoView == null));
         if (videoView!=null){
-////                Log.i(TAG, mIndex +" 最大进"+videoView.getDuration()+"__播放进度: "+videoView.getCurrentPosition());
-////                Log.i(TAG, mIndex +" 最大进"+videoBean.getMaxDuration()+"__播放进度: "+videoBean.getCurrentPosition());
-////                Log.i(TAG, mIndex + " isVisibleToUser ? " + isVisibleToUser + "___videoView.isValid() ? " + videoView.isValid());
             if (isVisibleToUser && videoView.isValid()){
                 videoView.setVideoURI(getVideoUri(mParam1.getVideoUrl()));
                 videoView.seekTo(mParam1.getCurrentPosition());
@@ -156,7 +150,7 @@ public class VideoFragment2 extends Fragment implements MediaPlayer.OnPreparedLi
         return videoUri;
     }
 
-    public VideoFragment2 registCallBack(@NonNull VideoFragmentCallBack callBack) {
+    public VideoFragment2 registCallBack(@NonNull FragmentCallBack callBack) {
         this.callBack = callBack;
         return this;
     }
