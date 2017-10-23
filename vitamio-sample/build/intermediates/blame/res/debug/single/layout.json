@@ -124,12 +124,12 @@
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_home.xml"
     },
     {
-        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\layout\\videoview.xml",

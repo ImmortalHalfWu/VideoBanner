@@ -36,12 +36,12 @@
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_cab_background_top_holo_light.9.png"
     },
     {
-        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_spinner_ab_disabled_holo_light.9.png",
-        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_spinner_ab_disabled_holo_light.9.png"
-    },
-    {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ab_share_pack_holo_light.9.png",
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ab_share_pack_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_spinner_ab_disabled_holo_light.9.png",
+        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_spinner_ab_disabled_holo_light.9.png"
     },
     {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_spinner_ab_pressed_holo_dark.9.png",
@@ -120,12 +120,12 @@
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_go_search_api_holo_light.png",
-        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ic_go_search_api_holo_light.png"
-    },
-    {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ab_stacked_solid_light_holo.9.png",
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ab_stacked_solid_light_holo.9.png"
+    },
+    {
+        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_go_search_api_holo_light.png",
+        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ic_go_search_api_holo_light.png"
     },
     {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_tab_selected_holo.9.png",
@@ -184,12 +184,12 @@
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ic_menu_share_holo_dark.png"
     },
     {
-        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_ab_back_holo_light.png",
-        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ic_ab_back_holo_light.png"
-    },
-    {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_menu_hardkey_panel_holo_light.9.png",
         "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_menu_hardkey_panel_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_ab_back_holo_light.png",
+        "source": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable-xxhdpi\\abc_ic_ab_back_holo_light.png"
     },
     {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ab_transparent_light_holo.9.png",

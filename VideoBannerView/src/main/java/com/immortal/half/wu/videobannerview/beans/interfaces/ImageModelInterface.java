@@ -1,6 +1,7 @@
 package com.immortal.half.wu.videobannerview.beans.interfaces;
 
 import android.os.Parcelable;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 
 /**
@@ -11,4 +12,6 @@ import android.support.annotation.NonNull;
 
 public interface ImageModelInterface extends Parcelable {
     @NonNull String getImageUrl();
+    @DrawableRes int getImageId();
+    long getPauseTime();
 }

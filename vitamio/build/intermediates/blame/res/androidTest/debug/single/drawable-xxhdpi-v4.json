@@ -16,12 +16,12 @@
         "source": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\scrubber_control_normal_holo.png"
     },
     {
-        "merged": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\scrubber_control_disabled_holo.png",
-        "source": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\scrubber_control_disabled_holo.png"
-    },
-    {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\scrubber_control_pressed_holo.png",
         "source": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\scrubber_control_pressed_holo.png"
+    },
+    {
+        "merged": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\scrubber_control_disabled_holo.png",
+        "source": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\scrubber_control_disabled_holo.png"
     },
     {
         "merged": "E:\\MyToys\\VideoBanner\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\scrubber_primary_holo.9.png",

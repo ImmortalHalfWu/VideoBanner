@@ -9,7 +9,7 @@ import android.support.v4.app.Fragment;
  * Time : 2017/10/21  15:35
  */
 
-public interface VideoFragmentCallBack {
+public interface FragmentCallBack {
 
     void over(@NonNull Fragment fragment);
     void erro(@NonNull Fragment fragment);

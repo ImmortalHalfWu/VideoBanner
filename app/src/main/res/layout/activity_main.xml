@@ -8,7 +8,7 @@
     tools:context="com.immortal.half.wu.videobanner.MainActivity">
 
     <com.immortal.half.wu.videobannerview.view.VideoBannerView
-        android:background="@color/mediacontroller_bg_pressed"
+        android:background="@color/colorAccent"
         android:id="@+id/videoBannerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

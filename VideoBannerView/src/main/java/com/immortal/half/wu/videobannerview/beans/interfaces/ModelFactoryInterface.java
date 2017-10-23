@@ -1,5 +1,6 @@
 package com.immortal.half.wu.videobannerview.beans.interfaces;
 
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
@@ -11,6 +12,7 @@ import android.support.annotation.Nullable;
 public interface ModelFactoryInterface {
 
     @NonNull VideoModelInterface createVideoModel(@NonNull String VideoCacheDir,@NonNull String videoUrl, @Nullable String videoName);
-    @NonNull ImageModelInterface createImageModel(@NonNull String imageUrl);
+    @NonNull ImageModelInterface createImageModel(@NonNull String imageUrl,long pauseTime);
+    @NonNull ImageModelInterface createImageModel(@DrawableRes int imageId,long pauseTime);
 
 }

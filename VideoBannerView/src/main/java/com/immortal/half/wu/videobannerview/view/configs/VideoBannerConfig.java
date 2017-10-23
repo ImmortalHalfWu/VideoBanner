@@ -21,7 +21,7 @@ import java.util.List;
  * Created : immortalHalfWu
  * Time : 2017/10/20  16:38
  */
-
+@Deprecated
 public class VideoBannerConfig {
 
     private final List<Fragment> fragments = new ArrayList<>();
@@ -92,8 +92,8 @@ public class VideoBannerConfig {
         }
 
         // TODO: 2017/10/20 添加图片广告页
-        public VideoBannerConfigBuilder registImageBanner(@NonNull String imageUrl){
-            ImageModelInterface imageModelInterface = ModelFactory.instance().createImageModel(imageUrl);
+        public VideoBannerConfigBuilder registImageBanner(@NonNull String imageUrl,long pauseTime){
+            ImageModelInterface imageModelInterface = ModelFactory.instance().createImageModel(imageUrl,pauseTime);
             Loging.log("imageModelInterface instanceof ModelInterface == " + (imageModelInterface instanceof ModelInterface));
             if (imageModelInterface instanceof ModelInterface){
                 Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) imageModelInterface);

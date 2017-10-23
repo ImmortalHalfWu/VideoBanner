@@ -1,5 +1,6 @@
 package com.immortal.half.wu.videobannerview.beans;
 
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -36,7 +37,13 @@ public class ModelFactory implements ModelFactoryInterface{
 
     @NonNull
     @Override
-    public ImageModelInterface createImageModel(@NonNull String imageUrl) {
-        return new ImageBean(imageUrl);
+    public ImageModelInterface createImageModel(@NonNull String imageUrl,long pauseTime) {
+        return new ImageBean(imageUrl,pauseTime);
+    }
+
+    @NonNull
+    @Override
+    public ImageModelInterface createImageModel(@DrawableRes int imageId,long pauseTime) {
+        return new ImageBean(imageId,pauseTime);
     }
 }

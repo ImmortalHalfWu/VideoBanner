@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.immortal.half.wu.videobanner"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -33,7 +33,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
+    //    compile project(':VideoBannerView')
     compile project(':VideoBannerView')
-//    compile(name: 'VideoBannerView-release', ext: 'aar')
-
 }

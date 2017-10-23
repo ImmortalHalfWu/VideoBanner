@@ -1,5 +1,6 @@
 package com.immortal.half.wu.videobannerview.controllers.interfaces;
 
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 
@@ -14,7 +15,8 @@ import java.util.List;
 public interface ControllerInterfaces {
 
     ControllerInterfaces registVideoBanner(@NonNull String videoUrl,@NonNull String videoName);
-    ControllerInterfaces registImageBanner(@NonNull String imageUrl);
+    ControllerInterfaces registImageBanner(@NonNull String imageUrl,long pauseTime);
+    ControllerInterfaces registImageBanner(@DrawableRes int imageId,long pauseTime);
     ControllerInterfaces registCustomBanner(@NonNull Fragment fragment);
     List<Fragment> getBannerFragments();
     ControllerInterfaces clearBanner();

@@ -1,5 +1,6 @@
 package com.immortal.half.wu.videobannerview.controllers;
 
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,10 +14,10 @@ import com.immortal.half.wu.videobannerview.beans.interfaces.VideoModelInterface
 import com.immortal.half.wu.videobannerview.controllers.interfaces.ControllerInterfaces;
 import com.immortal.half.wu.videobannerview.distributers.FragmentDistributer;
 import com.immortal.half.wu.videobannerview.enums.BannerType;
+import com.immortal.half.wu.videobannerview.fragments.ImageFragment;
 import com.immortal.half.wu.videobannerview.fragments.VideoFragment2;
-import com.immortal.half.wu.videobannerview.fragments.interfaces.VideoFragmentCallBack;
+import com.immortal.half.wu.videobannerview.fragments.interfaces.FragmentCallBack;
 import com.immortal.half.wu.videobannerview.utils.FileUtil;
-import com.immortal.half.wu.videobannerview.utils.Loging;
 import com.immortal.half.wu.videobannerview.view.CustomViewPager;
 import com.immortal.half.wu.videobannerview.view.configs.VideoBannerConfig;
 
@@ -48,7 +49,7 @@ public class BannerController implements ControllerInterfaces{
     private FragmentManager fragmentManager;
     private VideoBannerConfig videoBannerConfig;
 
-    private VideoFragmentCallBack videoFragmentCallBack = new VideoFragmentCallBack() {
+    private FragmentCallBack videoFragmentCallBack = new FragmentCallBack() {
         @Override
         public void over(@NonNull Fragment fragment) {
             if (!videoBannerConfig.getFragments().contains(fragment)){
@@ -72,10 +73,22 @@ public class BannerController implements ControllerInterfaces{
         }
     };
 
+    private FragmentCallBack imageFragmentCallBack = new FragmentCallBack() {
+        @Override
+        public void over(@NonNull Fragment fragment) {
+            videoFragmentCallBack.over(fragment);
+        }
+
+        @Override
+        public void erro(@NonNull Fragment fragment) {
+            videoFragmentCallBack.erro(fragment);
+        }
+    };
+
     @Override
     public ControllerInterfaces registVideoBanner(@NonNull String videoUrl, @NonNull String videoName) {
         VideoModelInterface videoModel = ModelFactory.instance().createVideoModel(videoBannerConfig.getCacheDir(), videoUrl, videoName);
-        Loging.log("imageModelInterface instanceof ModelInterface == " + (videoModel instanceof ModelInterface));
+//        Loging.log("imageModelInterface instanceof ModelInterface == " + (videoModel instanceof ModelInterface));
         if (videoModel instanceof ModelInterface){
             Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) videoModel);
             if (fragment instanceof VideoFragment2){
@@ -88,14 +101,39 @@ public class BannerController implements ControllerInterfaces{
     }
 
     @Override
-    public ControllerInterfaces registImageBanner(@NonNull String imageUrl) {
-        ImageModelInterface imageModelInterface = ModelFactory.instance().createImageModel(imageUrl);
-        Loging.log("imageModelInterface instanceof ModelInterface == " + (imageModelInterface instanceof ModelInterface));
-        if (imageModelInterface instanceof ModelInterface){
-            Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) imageModelInterface);
-            videoBannerConfig.addFragment(fragment);
-        }
+    public ControllerInterfaces registImageBanner(@NonNull String imageUrl,long pauseTime) {
+        ImageModelInterface imageModelInterface = ModelFactory.instance().createImageModel(imageUrl,pauseTime);
+//        Loging.log("imageModelInterface instanceof ModelInterface == " + (imageModelInterface instanceof ModelInterface));
+//        if (imageModelInterface instanceof ModelInterface){
+//            Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) imageModelInterface);
+//            videoBannerConfig.addFragment(addImageFragment(imageModelInterface));
+//        }
+        addImageFragment(imageModelInterface);
         return this;
+    }
+
+    @Override
+    public ControllerInterfaces registImageBanner(@DrawableRes int imageId,long pauseTime) {
+        ImageModelInterface imageModelInterface = ModelFactory.instance().createImageModel(imageId,pauseTime);
+//        Loging.log("imageModelInterface instanceof ModelInterface == " + (imageModelInterface instanceof ModelInterface));
+//        if (imageModelInterface instanceof ModelInterface){
+//            Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) imageModelInterface);
+//            videoBannerConfig.addFragment(addImageFragment(imageModelInterface));
+//        }
+        addImageFragment(imageModelInterface);
+        return this;
+    }
+
+    private void addImageFragment(ImageModelInterface imageModelInterface){
+        if (!(imageModelInterface instanceof ModelInterface)){
+            throw new IllegalAccessError("imageModelInterface instanceof ModelInterface is false");
+        }
+        Fragment fragment = FragmentDistributer.instance().toFragment((ModelInterface<BannerType, BaseBean>) imageModelInterface);
+        if (fragment instanceof ImageFragment){
+            ImageFragment imageFragment = (ImageFragment) fragment;
+            imageFragment.registCallBack(imageFragmentCallBack);
+        }
+        videoBannerConfig.addFragment(fragment);
     }
 
     @Override

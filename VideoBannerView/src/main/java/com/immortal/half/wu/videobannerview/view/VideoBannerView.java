@@ -8,7 +8,6 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.immortal.half.wu.videobannerview.controllers.BannerController;
 import com.immortal.half.wu.videobannerview.controllers.interfaces.ControllerInterfaces;
 import com.immortal.half.wu.videobannerview.utils.Loging;
@@ -54,7 +53,6 @@ public class VideoBannerView extends RelativeLayout {
         if (context instanceof Activity && !LibsChecker.checkVitamioLibs((Activity) context)){
             Loging.log("vitamio 初始化失败");
         }
-        Fresco.initialize(context.getApplicationContext());
     }
 
     public ControllerInterfaces build(@NonNull FragmentManager fm) {

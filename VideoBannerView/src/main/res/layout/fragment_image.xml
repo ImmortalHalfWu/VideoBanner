@@ -8,19 +8,18 @@
     android:background="@android:color/holo_green_dark"
     tools:context="com.immortal.half.wu.videobannerview.fragments.ImageFragment">
 
-    <!--<ImageView-->
-        <!--android:id="@+id/imageView"-->
-        <!--android:src="@drawable/ic_launcher"-->
-        <!--android:scaleType="fitCenter"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:background="@android:color/holo_orange_light"-->
-        <!--android:layout_centerInParent="true"/>-->
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/imageView2"
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        fresco:placeholderImage="@drawable/ic_launcher"
-        />
+        android:background="@android:color/holo_orange_light"
+        android:layout_centerInParent="true"/>
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--fresco:placeholderImage="@drawable/ic_launcher"-->
+        <!--/>-->
 
 </RelativeLayout>
